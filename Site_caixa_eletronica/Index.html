@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./acess/css/caixa_eletronico_css.css"> <title></title>
+</head>
+
+<body> 
+  <h1>Caixa Eletronico</h1>
+<img src="./images/caixa_eletronico_png.png" alt="Caixa Eletrônico"> <h1>Programa Caixa Eletrônico</h1>
+  <p>
+
+  <p> 
+        <input type="button" value="Contato" id="btnContato"> 
+        <input type="button" value="Sobre" id="btnSobre"> 
+    </p>
+  <script>
+        document.getElementById('btnContato').addEventListener('click', function() {
+            window.location.href = './pages/contato_html.html';
+        });
+
+        document.getElementById('btnSobre').addEventListener('click', function() {
+            window.location.href = './pages/sobre_html.html';
+        });
+    </script>
+</p>
+  <p>Valor do Saque R$:
+    <input type="text" id="inSaque">
+  </p>
+  <p>
+    <input type="button" value="Exibir Notas para Saque" id="btExibir">
+  </p>
+  <h3 id="outNotasCem"></h3>
+  <h3 id="outNotasCinquenta"></h3>
+  <h3 id="outnotasVinte"></h3>
+  <h3 id="outNotasDez"></h3>
+  <h3 id="outNotasCinco"></h3>
+  <h3 id="outNotasDois"></h3>
+  <p>
+  <script src="./acess/javascript/caixa_eletronico_js.js"></script> </body>
+
+</html>
